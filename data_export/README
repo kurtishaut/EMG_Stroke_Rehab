@@ -1,0 +1,26 @@
+-	Data exported from .xdf to .txt 
+-	Path to export script: /<username>/Box/EMG_project/bricks_data_copy/matlab_scripts/mia/xdf_export_2020-02-17.m
+-	Each subject has two files:
+
+	segments - time and sampling parameters for the 3 calibration phases (relax, flex, extend) 	and the game play. Segments will import as a table with variable names.
+
+	Row names:  	calibrate_rest
+			calibrate_flex
+			calibrate_extend
+			game_play
+	
+	Var names: 	num_samples
+			index_range (min-max)
+			t_begin
+			t_end
+			duration (sec)
+			effective_srate (observed sampling rate, Hz; expected sampling at 2kHz) 
+
+
+	time_channels - concatenated time bin and channel recording data 
+
+	Row names:  	time_bins (ms)
+			channel_01
+			channel_02
+	
+	Var names: 	Var01....VarN (time bins)
